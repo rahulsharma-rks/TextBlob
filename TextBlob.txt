@@ -1,0 +1,80 @@
+TextBlob:https://textblob.readthedocs.io/en/dev/index.html
+
+b4.tags:
+List of the tags and what they mean:
+DT-determiner
+EX-existential there (like: “there is” … think of it like “there exists”)
+FW-foreign word
+IN-preposition/subordinating conjunction
+JJ-adjective ‘big’
+JJR-adjective, comparative ‘bigger’
+JJS-adjective, superlative ‘biggest’
+LS-list marker 1)
+MD-modal could, will
+NN-noun, singular ‘desk’
+RBR-adverb, comparative better
+RBS-adverb, superlative best
+NNS-noun plural ‘desks’
+NNP-proper noun, singular ‘Harrison’
+NNPS-proper noun, plural ‘Americans’
+PDT-predeterminer ‘all the kids’
+POS-possessive ending parent‘s
+PRP-personal pronoun I, he, she
+PRP$-possessive pronoun my, his, hers
+RB-adverb very, silently,
+RP-particle give up
+TO-to go ‘to‘ the store.
+UH-interjection errrrrrrrm
+VB-verb, base form take
+VBD-verb, past tense took
+CC-coordinating conjunction
+CD-cardinal digit
+VBG-verb, gerund/present participle taking
+VBN-verb, past participle taken
+VBP-verb, sing. present, non-3d take
+VBZ-verb, 3rd person sing. present takes
+WDT-wh-determiner which
+WP-wh-pronoun who, what
+WP$-possessive wh-pronoun whose
+WRB-wh-abverb where, when 
+
+Lemmatize:
+
+from textblob import Word
+w1 = Word("octopi")
+print(w1.lemmatize())
+
+w2 = Word("went")
+print(w2.lemmatize("v"))
+w3 = Word("worse")
+print(w3.lemmatize("a"))
+
+Tag:
+ADJ-Adjective(new,good,high)
+ADV-Adverb(really,still. early)
+CNJ-Conjunction(and,or,but,if)
+DET-Determiner(the,a,some,most)
+EX-Existential(there,there's)
+FW-Foreign Word(dolce,quo,esprit)
+MOD-Modal Verb(will,can,would,may)
+N-Noun(year,home,costs,time)
+NP-Proper Noun(Alison,Kevin, India)
+NUM-Number(1997,Eleven,twenty-two)
+PRO-Pronoun(he,her,its,us)
+P-Preposition(on,of,at,with)
+TO-The Word to(to)
+UH-Interjection(ah,bang,ha,whee)
+V-Verb(is,has,get,make,do)
+VD-Past Tense(said,took,told,made)
+VG-Present Participle(making,going,playing,working)
+VN-Past Participle(given,taken,begun)
+WH-Wh Determiner(who,which,when,what,where)
+
+WordNet is dictionary for the English language, specifically designed for natural language processing.
+
+Synset is a special kind of a simple interface that is present in NLTK to look up words in WordNet. 
+Synset instances are the groupings of synonymous words that express the same concept. Some of the words have only one Synset and some have several.
+
+
+n-gram
+In the fields of computational linguistics and probability, an n-gram is a contiguous sequence of n items from a given sample of text or speech.
